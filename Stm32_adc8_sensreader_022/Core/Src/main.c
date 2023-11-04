@@ -1,8 +1,8 @@
 /* USER CODE BEGIN Header */
 
 /**
- *STM32F103C8T6 kullanarak, 8 Adet ADC verisi okuma ve verileri tek bir mesaj olarak USB ile bilgisayara yollama
- *Using STM32F103C8T6, reading data from 8 ADCs, and sending the data to a computer via USB as a single message."
+ *STM32F103C8T6 kullanarak, 8 kanal ADC verisi okuma ve verileri USB ile bilgisayara yollama
+ *Using STM32F103C8T6, reading 8 channel ADC data and sending the data to the computer via USB."
  **Mete Sepetcioglu**
   ******************************************************************************
   * @file           : main.c
@@ -57,14 +57,13 @@ union
   	{
 
            data[0] = adcbuffer[0];
- 		   data[1] = adcbuffer[1];
+ 	   data[1] = adcbuffer[1];
            data[2] = adcbuffer[2];
- 		   data[3] = adcbuffer[3];
+ 	   data[3] = adcbuffer[3];
      	   data[4] = adcbuffer[4];
- 		   data[5] = adcbuffer[5];
- 		   data[6] = adcbuffer[6];
- 		   data[7] = adcbuffer[7];
-
+ 	   data[5] = adcbuffer[5];
+ 	   data[6] = adcbuffer[6];
+ 	   data[7] = adcbuffer[7];
 
   	}
   }
